@@ -9,6 +9,7 @@ app.engine('handlebars',expressHbs({
     defaultLayout:'main'
 }))
 
+app.use(express.static("views"));
 app.set('view engine', 'handlebars');
 
 //lang nghe http get
@@ -25,38 +26,18 @@ app.get('/' ,function (require , response){
     //     title:name,
     //     date:'2021/03/29',
     //     array:arr});
+    response.render("index");
     
 
 });
 app.get('/Login' ,function (require , response){
-
-    // response.send('hello xin chao cac ban :')
- 
-
-    // var name = "Dinh Phu";
-
-    // var arr =["Apple","Class","Public","Name","ABC"];
-
-    // response.render('abc',{
-    //     title:name,
-    //     date:'2021/03/29',
-    //     array:arr});
+    response.render("Login");
     
 
 });
 app.get('/Register' ,function (require , response){
+    response.render("Register");
 
-    // response.send('hello xin chao cac ban :')
- 
-
-    // var name = "Dinh Phu";
-
-    // var arr =["Apple","Class","Public","Name","ABC"];
-
-    // response.render('abc',{
-    //     title:name,
-    //     date:'2021/03/29',
-    //     array:arr});
     
 
 });
@@ -68,4 +49,4 @@ app.post('/Login' ,function (require , response){
 
 });
 
-app.listen(process.env.PORT || '3002')
+app.listen(process.env.PORT || '3000')
