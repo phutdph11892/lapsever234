@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <style>
+
+
+        body {
+            background: #007bff;
+            background: linear-gradient(to right, #0062E6, #33AEFF);
+        }
+
+
+        #txtName {
+            margin-top: 10px;
+        }
+
+        #txtEmail {
+            margin-top: 10px;
+        }
+
+        #txtPhone {
+            margin-top: 10px;
+        }
+
+        #txtDate {
+            margin-top: 10px;
+        }
+
+        #txtPassWord {
+            margin-top: 10px;
+        }
+
+        #txtConfinPass {
+            margin-top: 10px;
+        }
+
+        #radioGioiTinh {
+            margin-top: 10px;
+        }
+
+        #radioFemale {
+            margin-left: 10px;
+        }
+
+        #checkBock {
+            margin-top: 10px;
+        }
+        .card-body{
+            background-color:black
+        }
+        .container{
+            top: 6%;
+           position: absolute;
+           left: 3%;
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="star-sky.jpg" class=" text-center" width="100%" >
+<div class="container">
+    
+    <div class="row">
+        <div class="col-lg-5 mx-auto">
+            <div class="card  my-5">
+                <div class="card-body">
+                    <h5 class="card-title text-center"><img src="logo_tinder_1.png" class=" text-center" width="150px" /></h5>
+                    <form class="form-signin">
+
+                        <div id="txtName" class="form-group">
+                            <!--                            <label for="inputFullNeme" class="form-label">Full Name</label>-->
+                            <input type="email" id="inputFullNeme" class="form-control" placeholder="Full name"
+                            >
+
+                        </div>
+
+                        <div id="txtEmail" class="form-group">
+                            <!--                            <label for="inputEmail" class="form-label">Email address</label>-->
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                            >
+
+                        </div>
+
+                        <div id="txtPhone" class="form-group">
+                            <div class="form-group input-group">
+                                <!--                            <div class="input-group-prepend">-->
+                                <!--                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>-->
+                                <!--                            </div>-->
+
+                                <select class="custom-select" style="max-width: 120px;">
+                                    <option selected="">+037</option>
+                                    <option value="1">+098</option>
+                                    <option value="2">+097</option>
+                                    <option value="3">+701</option>
+                                </select>
+                                <input name="" class="form-control" placeholder="Phone number" type="text">
+                            </div>
+                        </div>
+
+
+                        <div id="txtDate" class="form-group">
+                            <input type="date" id="birthDate" class="form-control">
+                        </div>
+
+
+                        <!--                        form-label-group bo tron-->
+                        <div id="txtPassWord" class="form-group">
+                            <!--                            <label for="inputPassword" class="form-label">Password</label>-->
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                            >
+                        </div>
+                        <div id="txtConfinPass" class="form-group">
+                            <!--                            <label for="inputConfirmPassWord" class="form-label">Confrim Password</label>-->
+                            <input type="password" id="inputConfirmPassWord" class="form-control"
+                                   placeholder="Confrim Password"
+                            >
+                        </div>
+
+
+                        <div id="radioGioiTinh" class="form-group input-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1" style="color:white">
+                                    Nam
+                                </label>
+                            </div>
+                            <div id="radioFemale" class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2"  style="color:white">
+                                    Nu
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"  style="color:white">Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1"  style="color:white">Bong Da</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2"  style="color:white">Du Lich</label>
+                        </div>
+
+                        <div id="checkBock" class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1"  style="color:white">Remember password</label>
+                        </div>
+                        <div class="card-title text-center"> <button class="btn btn-lg btn-primary" type="submit">Sign in</button></div>
+                        <div class="card-title text-center">  <a href="Login.html">If not account ? Click here</a></div>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>
